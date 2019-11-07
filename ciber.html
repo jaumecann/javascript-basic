@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ciber</title>
+</head>
+
+
+<script>
+
+// ex 1
+ console.log("Hola mundo");
+
+// ex 2
+ alert("Aquí Jaume");
+
+// ex 3
+ var name = "Jaume";
+ var sname = "Canals";
+
+ console.log(name + " " + sname);
+
+// ex 4
+var a = 6776;
+var b = 345;
+
+console.log("la suma entre " + a + " y " + b + " es igual a " + (a+b));
+
+// ex 5
+
+var nota = 5.4;
+
+if (nota >= 5) {
+    alert("Respira, has aprobado con un " + nota);
+} else {
+    alert("Fatal, has suspendido con un " + nota);
+};
+
+// ex 6
+
+var frase = "Tinc un cotxe de color blau";
+
+var frase2 = frase.replace("blau", "verd");
+var frase3 = frase.replace(/o/g,"u");
+
+console.log (frase2);
+console.log (frase3);
+
+// ex 7
+
+var obj = ["taula", "cadira", "ordinador", "llibreta"]
+
+for (i=0; i<obj.length; i++){
+    console.log("L'objecte " + obj[i] + " està a la posició " + [i]);
+}
+
+
+// ex 8
+
+function calculadora (operador, valor1, valor2){
+
+switch (operador){
+    case "suma" :
+    operador = "+";
+    break;
+    case "resta" :
+    operador = "-";
+    break;
+    case "multiplica" :
+    operador = "*";
+    break;
+    default:
+    return "operador no valido";
+}
+
+return eval(valor1 +operador+ valor2);
+
+};
+
+var resultat = calculadora("suma",14,6);
+
+console.log(resultat);
+
+</script>
+
+</html>
