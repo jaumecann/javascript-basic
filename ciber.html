@@ -59,27 +59,22 @@ for (i=0; i<obj.length; i++){
 // ex 8
 
 function calculadora (operador, valor1, valor2){
-
 switch (operador){
     case "suma" :
-    operador = "+";
+    return valor1 + valor2
     break;
     case "resta" :
-    operador = "-";
+    return valor1 - valor2
     break;
     case "multiplica" :
-    operador = "*";
+    return valor1 * valor2
     break;
     default:
     return "operador no valido";
 }
-
-return eval(valor1 +operador+ valor2);
-
 };
 
-var resultat = calculadora("suma",14,6);
-
+var resultat = calculadora("multiplica",3,6);
 console.log(resultat);
 
 </script>
